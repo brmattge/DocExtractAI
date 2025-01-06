@@ -1,0 +1,23 @@
+.layout {
+  min-height: 100vh;
+  background-color: #282c34;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
