@@ -139,6 +139,8 @@ const DocumentForm: React.FC<DocumentFormProps> = ({ setFormattedFields, setSele
                 await form.validateFields();
 
                 if (currentFile) {
+                    setFormattedFields('');
+
                     await handleUpload(currentFile);
                 }
             } catch (error) {
@@ -225,6 +227,8 @@ const DocumentForm: React.FC<DocumentFormProps> = ({ setFormattedFields, setSele
         setSelectedValue(undefined);
         setFixedTags([]);
         setNewTags([]);
+        setFormattedFields('');
+        setSelectedDocument('');
     };
 
     return (
